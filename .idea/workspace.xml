@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a3ee413-f8ee-41cc-9296-7163a630fcc3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/akotu235/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/akotu235/pixymsg/Coordinator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/akotu235/pixymsg/PixelModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/akotu235/pixymsg/PixelReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/akotu235/view/PixyMsgGUI.java" afterDir="false" />
-    </list>
+    <list default="true" id="0a3ee413-f8ee-41cc-9296-7163a630fcc3" name="Changes" comment="created GUI" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,8 +89,30 @@
       <updated>1673946448620</updated>
       <workItem from="1673946449965" duration="26831000" />
       <workItem from="1673992198101" duration="20130000" />
-      <workItem from="1674049410314" duration="3214000" />
+      <workItem from="1674049410314" duration="19111000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1674053321901</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674053321901</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added methods hasMessage and getImage to PixelReader">
+      <created>1674062506148</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674062506148</updated>
+    </task>
+    <task id="LOCAL-00003" summary="created GUI">
+      <created>1674084205482</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674084205482</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +128,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="added methods hasMessage and getImage to PixelReader" />
+    <MESSAGE value="created GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="created GUI" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

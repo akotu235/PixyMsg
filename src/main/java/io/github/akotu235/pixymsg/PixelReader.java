@@ -45,4 +45,21 @@ public class PixelReader {
         }
         return new String(bitMsg.toByteArray());
     }
+
+    public boolean hasMessage() {
+        Coordinator coordinator = new Coordinator(image.getWidth(), image.getHeight());
+
+        //Preamble check.
+        for (int i = 0; i < 10; i++) {
+            if (Math.abs(image.getRGB(coordinator.getX(), coordinator.getY())) % 2 == 0) {
+                return false;
+            }
+            coordinator.next();
+        }
+        return true;
+    }
+
+    public BufferedImage getImage() {
+        return image;
+    }
 }

@@ -25,6 +25,7 @@ public class PixyMsgGUI extends JFrame {
     private PixelModifier pixelModifier;
     private String filePath;
     private String fileName;
+
     public PixyMsgGUI() {
         setTitle("PixyMsg");
         setSize(400, 120);
@@ -48,7 +49,7 @@ public class PixyMsgGUI extends JFrame {
                 int returnValue = fileChooser.showOpenDialog(null);
                 if (returnValue == JFileChooser.APPROVE_OPTION) {
                     filePath = fileChooser.getSelectedFile().getAbsolutePath();
-                    String fileNameWithExtension  = fileChooser.getSelectedFile().getName();
+                    String fileNameWithExtension = fileChooser.getSelectedFile().getName();
 
                     int index = fileNameWithExtension.lastIndexOf(".");
                     fileName = fileNameWithExtension.substring(0, index);
@@ -61,7 +62,7 @@ public class PixyMsgGUI extends JFrame {
                         throw new RuntimeException(ex);
                     }
                     if (pixelReader.hasMessage()) {
-                        label.setText("Hidden message in "+ fileName);
+                        label.setText("Hidden message in " + fileName);
                         msg.setText(pixelReader.getMsg());
                         readMsgPanel.setVisible(true);
                         addMsgPanel.setVisible(false);
@@ -92,7 +93,7 @@ public class PixyMsgGUI extends JFrame {
                     } catch (IOException ex) {
                         throw new RuntimeException(ex);
                     }
-                    label.setText(directoryPath + "\\" + fileName + "[PixyMsg].bmp created");
+                    label.setText("Created: " + fileName + "[PixyMsg].bmp");
                     label.setVisible(true);
                     addMsgPanel.setVisible(false);
                     readMsgPanel.setVisible(false);

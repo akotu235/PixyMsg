@@ -80,7 +80,7 @@ public class PixyMsgGUI extends JFrame {
                 JFileChooser fileChooser = new JFileChooser();
                 fileChooser.setDialogTitle("Select directory to save the file");
                 fileChooser.setApproveButtonText("Save");
-                fileChooser.setCurrentDirectory(new File(System.getProperty("user.home") + "/Desktop"));
+                fileChooser.setCurrentDirectory(new File(filePath));
                 fileChooser.setFileSelectionMode(JFileChooser.SAVE_DIALOG);
                 int returnValue = fileChooser.showOpenDialog(null);
                 if (returnValue == JFileChooser.APPROVE_OPTION) {

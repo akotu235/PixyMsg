@@ -63,11 +63,13 @@ public class PixyMsgGUI extends JFrame {
                     }
                     if (pixelReader.hasMessage()) {
                         label.setText("Hidden message in " + fileName);
+                        label.setForeground(Color.BLACK);
                         msg.setText(pixelReader.getMsg());
                         readMsgPanel.setVisible(true);
                         addMsgPanel.setVisible(false);
                     } else {
                         label.setText("No message");
+                        label.setForeground(Color.BLACK);
                         addMsgPanel.setVisible(true);
                         readMsgPanel.setVisible(false);
                     }
@@ -95,8 +97,10 @@ public class PixyMsgGUI extends JFrame {
                     }
                     if (outputFile.exists()) {
                         label.setText("Created: " + fileName + "[PixyMsg].bmp");
+                        label.setForeground(Color.BLACK);
                     } else {
                         label.setText("Failed to hide text in " + fileName + " image");
+                        label.setForeground(Color.RED);
                     }
                     label.setVisible(true);
                     addMsgPanel.setVisible(false);

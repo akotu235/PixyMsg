@@ -111,7 +111,10 @@ public class PixyMsgGUI extends JFrame {
 
         mainPanel.setLayout(new BorderLayout());
         msg.setOpaque(false);
-        msg.setEditable(false);
+        JScrollPane scrollPane = new JScrollPane(msg);
+        scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+        scrollPane.setPreferredSize(new Dimension(350, 100));
+        scrollPane.setBorder(null);
 
         mainPanel.add(imageLoadButton, BorderLayout.NORTH);
         mainPanel.add(label, BorderLayout.SOUTH);
@@ -119,7 +122,7 @@ public class PixyMsgGUI extends JFrame {
         mainPanel.add(readMsgPanel, BorderLayout.CENTER);
         addMsgPanel.add(msgLoadTextField);
         addMsgPanel.add(msgLoadButton);
-        readMsgPanel.add(msg);
+        readMsgPanel.add(scrollPane);
 
         addMsgPanel.setVisible(false);
         readMsgPanel.setVisible(false);

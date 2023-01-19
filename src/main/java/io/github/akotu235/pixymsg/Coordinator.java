@@ -16,6 +16,7 @@ class Coordinator {
             x += 1;
         } else if (y < height) {
             y += 1;
+            x = 0;
         } else {
             throw new IndexOutOfBoundsException();
         }

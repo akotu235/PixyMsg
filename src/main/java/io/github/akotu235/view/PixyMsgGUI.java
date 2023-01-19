@@ -93,7 +93,11 @@ public class PixyMsgGUI extends JFrame {
                     } catch (IOException ex) {
                         throw new RuntimeException(ex);
                     }
-                    label.setText("Created: " + fileName + "[PixyMsg].bmp");
+                    if (outputFile.exists()) {
+                        label.setText("Created: " + fileName + "[PixyMsg].bmp");
+                    } else {
+                        label.setText("Failed to hide text in " + fileName + " image");
+                    }
                     label.setVisible(true);
                     addMsgPanel.setVisible(false);
                     readMsgPanel.setVisible(false);

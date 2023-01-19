@@ -16,7 +16,7 @@ public class PixelReader {
         //Preamble check.
         /*TODO: Do something about this ugly exception.. */
         for (int i = 0; i < 10; i++) {
-            if (Math.abs(image.getRGB(coordinator.getX(), coordinator.getY())) % 2 == 0) {
+            if (Math.abs(image.getRGB(coordinator.getX(), coordinator.getY())) % 2 != i % 2) {
                 throw new RuntimeException();
             }
             coordinator.next();
@@ -51,7 +51,7 @@ public class PixelReader {
 
         //Preamble check.
         for (int i = 0; i < 10; i++) {
-            if (Math.abs(image.getRGB(coordinator.getX(), coordinator.getY())) % 2 == 0) {
+            if (Math.abs(image.getRGB(coordinator.getX(), coordinator.getY())) % 2 != i % 2) {
                 return false;
             }
             coordinator.next();

@@ -36,7 +36,7 @@ public class PixelModifier {
 
     private void setPreamble() {
         for (int i = 0; i < 10; i++) {
-            if (image.getRGB(coordinator.getX(), coordinator.getY()) % 2 == 0) {
+            if (Math.abs(image.getRGB(coordinator.getX(), coordinator.getY())) % 2 != i % 2) {
                 updatePixel();
             }
             coordinator.next();

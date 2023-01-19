@@ -1,12 +1,14 @@
 package io.github.akotu235.pixymsg;
 
 class Coordinator {
-    private int x = 0;
-    private int y = 0;
+    private int x;
+    private int y;
     private final int width;
     private final int height;
 
     Coordinator(final int width, final int height) {
+        this.x = 1;
+        this.y = 0;
         this.width = width;
         this.height = height;
     }

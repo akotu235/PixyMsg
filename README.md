@@ -1,8 +1,7 @@
 # PixyMsg
 A program to encode messages in pixels and read them.
 
-## Installation
-[Download](https://sourceforge.net/projects/pixymsg/) and run.
+[![Download PixyMsg](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/pixymsg/files/latest/download)
 
 ## License
 Distributed under the MIT License. See [LICENSE.md](https://github.com/akotu235/PixyMsg/blob/master/LICENSE.md) for more information.

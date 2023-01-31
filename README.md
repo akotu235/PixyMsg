@@ -1,4 +1,4 @@
-# PixyMsg
+# PixyMsg [![GitHub release (latest by date)](https://img.shields.io/github/v/release/akotu235/PixyMsg)](https://github.com/akotu235/PixyMsg/releases)
 A program to encode messages in pixels and read them.
 
 [![Download PixyMsg](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/pixymsg/files/latest/download)
